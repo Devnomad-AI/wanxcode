@@ -67,6 +67,11 @@ html {
   font-weight: 500px;
 }
 
+.link a i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 .link>a:hover {
   background-color: azure;
 }
