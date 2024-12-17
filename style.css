@@ -13,7 +13,7 @@ html {
 .container {
   background: red;
   height: auto;
-  max-width: 100%; /* Sesuaikan dengan layar */
+  max-width: 500px; /* Sesuaikan dengan layar */
   margin: 0 auto;
   background-image: url("background.jpeg");
   background-position: center;
