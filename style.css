@@ -12,8 +12,8 @@ html {
 
 .container {
   background: red;
-  height: auto;
-  max-width: 500px; /* Sesuaikan dengan layar */
+  height: 100vh;
+  max-width: 500px;
   margin: 0 auto;
   background-image: url("background.jpeg");
   background-position: center;
@@ -30,15 +30,15 @@ html {
 }
 
 .profile > img {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   border: 3px solid #222;
   border-radius: 100%;
   margin: 5px 10px;
 }
 
 .profile > p {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 900;
   color: #fff;
   letter-spacing: 2px;
@@ -59,7 +59,7 @@ html {
 .link > a {
   text-decoration: none;
   color: #222;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   border: 3px solid #222;
   background-color: #eaeaea;
@@ -67,7 +67,12 @@ html {
   margin: 5px 10px;
   padding: 10px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 500px;
+}
+
+.link a i {
+  font-size: 24px;
+  margin-right: 10px;
 }
 
 .link > a:hover {
@@ -76,22 +81,22 @@ html {
 
 .footer {
   text-align: center;
-  margin: 20px;
+  margin: 50px;
 }
 
 .footer > i {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .footer-brand {
   color: azure;
 }
 
-/* MEDIA QUERIES UNTUK DESKTOP (LAYAR LEBIH BESAR DARI 768px) */
+/* MEDIA QUERIES UNTUK DESKTOP */
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 100%;
     height: 100vh;
   }
 
@@ -122,23 +127,5 @@ html {
 
   .footer > i {
     font-size: 20px;
-  }
-}
-
-/* MEDIA QUERIES UNTUK DESKTOP BESAR (LAYAR LEBIH BESAR DARI 1024px) */
-@media (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-    height: 100vh;
-    padding: 20px;
-  }
-
-  .profile > p {
-    font-size: 2.4em;
-  }
-
-  .link > a {
-    font-size: 20px;
-    padding: 15px;
   }
 }
