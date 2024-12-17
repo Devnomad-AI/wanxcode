@@ -108,5 +108,13 @@ html {
     max-width: 500px; /* Menjaga agar kontennya tetap lebar tertentu */
     width: 100%;
   }
+ .content > .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px 5px 10px;
+  }
 }
 
