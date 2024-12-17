@@ -116,9 +116,13 @@ html {
   }
 
   .link {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px 5px 10px;
+}
 
   .link > a {
     font-size: 18px;
