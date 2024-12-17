@@ -97,6 +97,7 @@ html {
 @media (min-width: 768px) {
   .container {
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Memposisikan horizontal ke tengah */
     align-items: center; /* Memposisikan vertikal ke tengah */
     height: 100vh; /* Menyesuaikan tinggi layar penuh */
