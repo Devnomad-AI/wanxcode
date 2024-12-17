@@ -131,7 +131,7 @@ html {
 
   .footer {
     text-align: center;
-    justify-content: bottom;
+    margin-top: 50px;
 
   .footer > i {
     font-size: 20px;
