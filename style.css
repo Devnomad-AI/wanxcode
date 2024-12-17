@@ -1,16 +1,19 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* BASE STYLE (untuk perangkat mobile terlebih dahulu) */
 html {
   font-family: 'Bebas Neue', cursive;
 }
 
 .container {
   background: red;
-  height: 100vh;
-  max-width: 500px;
+  height: auto;
+  max-width: 100%; /* Sesuaikan dengan layar */
   margin: 0 auto;
   background-image: url("background.jpeg");
   background-position: center;
@@ -26,16 +29,16 @@ html {
   padding: 20px;
 }
 
-.profile>img {
-  height: 150px;
-  width: 150px;
+.profile > img {
+  height: 120px;
+  width: 120px;
   border: 3px solid #222;
   border-radius: 100%;
   margin: 5px 10px;
 }
 
-.profile>p {
-  font-size: 1.8em;
+.profile > p {
+  font-size: 1.6em;
   font-weight: 900;
   color: #fff;
   letter-spacing: 2px;
@@ -53,10 +56,10 @@ html {
   margin: 20px 5px 10px;
 }
 
-.link>a {
+.link > a {
   text-decoration: none;
   color: #222;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   border: 3px solid #222;
   background-color: #eaeaea;
@@ -64,28 +67,78 @@ html {
   margin: 5px 10px;
   padding: 10px;
   text-transform: uppercase;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
-.link a i {
-  font-size: 24px;
-  margin-right: 10px;
-}
-
-.link>a:hover {
+.link > a:hover {
   background-color: azure;
 }
 
 .footer {
   text-align: center;
-  margin: 50px;
+  margin: 20px;
 }
 
-.footer>i {
+.footer > i {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .footer-brand {
   color: azure;
+}
+
+/* MEDIA QUERIES UNTUK DESKTOP (LAYAR LEBIH BESAR DARI 768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+    height: 100vh;
+  }
+
+  .profile {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .profile > img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .profile > p {
+    font-size: 2em;
+    text-align: left;
+  }
+
+  .link {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .link > a {
+    font-size: 18px;
+    margin: 10px 5px;
+  }
+
+  .footer > i {
+    font-size: 20px;
+  }
+}
+
+/* MEDIA QUERIES UNTUK DESKTOP BESAR (LAYAR LEBIH BESAR DARI 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .profile > p {
+    font-size: 2.4em;
+  }
+
+  .link > a {
+    font-size: 20px;
+    padding: 15px;
+  }
 }
