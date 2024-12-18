@@ -121,7 +121,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    padding: 60px;
     background-color: rgba (0, 0, 0, 0.5);
     margin: 20px 5px 10px;
   }
